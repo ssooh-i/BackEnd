@@ -1,6 +1,4 @@
-package com.ssafy.hello;
-
-
+package com.ssafy.edu;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +11,7 @@ public class HelloServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//1.한글처리(UTF-8, EUC-KR등)
 		response.setContentType("text/html;charset=UTF-8");
-		
+				
 		//2.출력
 		response.getWriter().append("<html><head><title></title></head>");
 		response.getWriter().append("<body>");
@@ -21,5 +19,4 @@ public class HelloServlet extends HttpServlet {
 		response.getWriter().append("<a href='next.do'>다음으로</a>");
 		response.getWriter().append("</body></html>");
 	}
-
 }

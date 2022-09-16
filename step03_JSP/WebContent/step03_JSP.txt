@@ -1,0 +1,55 @@
+step03_JSP   --Dynamic Web Project
+                Dynamic Web Module Version: 4.0
+                Context root: lab
+                Content directory: WebContent
+                Generate web.xml deployment descriptor(체크안함)
+
+src
+	com.ssafy.product --패키지
+      BasketServlet.java   --servlet(doGet, name:BASKET, urlpattern:basket)
+	  SaveServlet.java     --servlet(doPost, name:SAVE, urlpattern:save)   
+	  
+WebContent
+      product
+        product.html      
+        
+	  example  --폴더
+	     exam01.jsp
+	     exam02.jsp
+	     forExample.jsp
+	     ifExample.html / ifExample.jsp  
+	     whileExample.html / whileExample.jsp
+	     test.html / testProc.jsp   -- getParameterValues(),getParameterNames()  
+	  directive --폴더
+         directiveEx1.jsp
+         directiveEx2.jsp / error.jsp
+         directiveEx3.jsp / top.jsp / bottom.jsp  / ugc.jpg       
+	  action
+         jspinclude.jsp  / greeting.jsp  
+         blood
+            A.jsp
+            AB.jsp
+            B.jsp
+            O.jsp
+            bloodtype.jsp
+            blood.html   
+         test
+            first.jsp
+            second.jsp
+            third.jsp   
+      session
+     	setSession.jsp
+     	viewSession1.jsp
+     	viewSession2.jsp
+     	
+      cookie     
+        cookCookie.jsp
+        testCookie1.jsp
+        testCookie2.jsp
+        
+     
+     
+	     
+========================================================	     
+eclipse.ini파일 맨 마지막에서	     
+-Dfile.encoding=utf-8             
