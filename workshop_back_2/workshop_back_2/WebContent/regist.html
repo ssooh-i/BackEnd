@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SSAFY 도서 관리</title>
+<style>
+	label{
+		display: inline-block;
+		width: 80px;
+	}
+	textarea {
+	width: 100%;
+}
+</style>
+<script>
+function send(){
+	if(document.frm.isbn.value==""){
+		alert("도서번호를 입력하시오");
+		document.frm.isbn.focus();
+		return;
+	}
+	if(document.frm.title.value==""){
+		alert("도서명를 입력하시오");
+		document.frm.title.focus();
+		return;
+	}
+	if(document.frm.author.value==""){
+		alert("저자를 입력하시오");
+		document.frm.author.focus();
+		return;
+	}
+	if(document.frm.price.value==""){
+		alert("가격을 입력하시오");
+		document.frm.price.focus();
+		return;
+	}
+	if(document.frm.desc.value==""){
+		alert("설명을 입력하시오");
+		document.frm.desc.focus();
+		return;
+	}
+	frm.submit();
+}
+</script>
+</head>
+<body>
+	<h1>SSAFY 도서 관리</h1>
+	<form method="post" action="main" name="frm">
+		<fieldset>
+		<legend>도서 등록</legend>
+		<!-- front-controller pattern에서 요청을 구분하기 위한 parameter -->
+		<input type="hidden" name="action" value="regist">
+		<label for="isbn">도서번호</label>
+		<input type="text" id="isbn" name="isbn"><br>
+		<label for="title">도서명</label>
+		<input type="text" id="title" name="title"><br>
+		<label for="author">저자</label>
+		<input type="text" id="author" name="author"><br>
+		<label for="price">가격</label>
+		<input type="number" id="price" name="price"><br>
+		<label for="desc">설명</label>
+		<br>
+		<textarea id="desc" name="desc"></textarea><br>
+		<input type="button" value="등록" onclick="send()">
+		<input type="reset" value="취소">
+		</fieldset>
+	</form>
+</body>
+</html>

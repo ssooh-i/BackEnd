@@ -1,0 +1,92 @@
+﻿step05_BookProject  -- Dynamic  Web Project
+                       dynamic web module version : 4.0
+                       context root : bkshop
+                       content directory : WebContent               
+src
+   common   
+       DBUtil.java       --복사
+   com.book.controller
+       MainServlet.java     --servlet   servlet-name:MainServlet  / url-pattern:main
+   com.book.dao 
+       LoginDao.java         --interface
+       LoginDaoImpl.java     --class
+   com.book.dto
+       LoginDTO.java         --class        
+             
+WebContent
+    WEB-INF
+        lib
+          mysql-connector-java-8.0.23.jar
+    table_schema             --폴더
+         table.sql           --member , bookshop 테이블작성(복사)
+    index.jsp
+    menu.jsp                 --복사
+
+    login                    --폴더
+       login.jsp             --복사
+       loginOK.jsp
+       fail.jsp   
+========================================================================================================
+<수정하기>
+     src
+       common 
+         DBUtil.java       --복사
+       com.book.controller
+         MainServlet.java     --servlet   servlet-name:MainServlet  / url-pattern:main                                                                                                
+	   com.book.dao
+	     LoginDao.java     --interface
+	     LoginDaoImpl.java
+	     BookDao.java
+	     BookDaoImpl.java
+	   com.book.dto
+	     LoginDTO.java     --class
+	     BookDTO.java                           
+     WebContent
+        index.jsp
+        menu.jsp
+        resource
+             table.sql   <---member , bookshop 테이블작성
+        
+        login  --폴더
+           login.jsp
+           loginOk.jsp
+           loginFail.jsp
+		book
+		   bookInsert.jsp    --복사
+		   bookList.jsp      --복사
+		   bookUpdate.jsp    --복사    
+========================================
+[작업순서]
+1. 데이터베이스 설계
+2. 화면설계(MVC패턴)
+3. 테이블생성 --> Bean 만들기
+4. 로그인
+5. book추가하기
+6. book전체보기
+7. 삭제하기 or  수정하기	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	   
