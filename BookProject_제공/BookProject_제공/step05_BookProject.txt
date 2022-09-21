@@ -51,10 +51,10 @@ WebContent
            login.jsp
            loginOk.jsp
            loginFail.jsp
-		book
-		   bookInsert.jsp    --복사
-		   bookList.jsp      --복사
-		   bookUpdate.jsp    --복사    
+       book
+          bookInsert.jsp    --복사
+          bookList.jsp      --복사
+          bookUpdate.jsp    --복사    
 ========================================
 [작업순서]
 1. 데이터베이스 설계
