@@ -1,0 +1,15 @@
+데일리실습 4-3 EL&JSTL
+--------------------------------------------------------
+workshop_back_4   -- Dynamic Web Project
+    src
+       com.ssafy.backend.dto
+           Book.java
+           User.java
+       com.ssafy.backend.servlet
+           MainServlet.java
+    WebContent
+         include
+             header.jsp  
+         regist_result.jsp
+         regist.html
+         index.jsp
