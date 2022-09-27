@@ -1,6 +1,7 @@
 package com.book.dto;
 
 public class BookDTO {
+	
 	private String isbn;
 	private String title;
 	private String author;
@@ -9,7 +10,6 @@ public class BookDTO {
 	
 	public BookDTO() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public BookDTO(String isbn, String title, String author, String company, int price) {
 		super();
