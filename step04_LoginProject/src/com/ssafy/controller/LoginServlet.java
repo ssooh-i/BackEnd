@@ -55,7 +55,8 @@ public class LoginServlet extends HttpServlet {
 	
 	//로그아웃--------------------------------------------------------------------------
 	protected void doLogout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession session=request.getSession();  
+		HttpSession session=request.getSession();
+		System.out.println();
 		LoginDTO dto=(LoginDTO)session.getAttribute("logOK");
 		String root=request.getContextPath();
 		
